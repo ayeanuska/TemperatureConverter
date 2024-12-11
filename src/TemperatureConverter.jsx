@@ -20,7 +20,7 @@ const TemperatureConverter = () => {
   };
 
   const handleKelvinChange = (e) => {
-    const { value } = e.target;
+    const { value } = e.target.value;
 
     setKelvin(value);
     setCelsius(value !== "" ? parseFloat(value) - 273.15 : "");
